@@ -8,7 +8,7 @@ const pad = (d) => {
 
 const questionBtn = (props) => {
   return (
-    <Link href={ `/answer/number-${props.key <= 6 ? props.key : props.key == 9 ? 9 : 5}` } passHref key={props.key}>
+    <Link href={ `/answer/number-${props.key < 5 ? props.key : props.key == 9 ? 9 : 5}` } passHref key={props.key}>
       <a className='inline-flex'><code className={`${styles.code} hover:shadow-lg`}>Soal {pad(props.key)}.</code></a>
     </Link>
   )
