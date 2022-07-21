@@ -75,12 +75,13 @@ function NumbeFive() {
   }
 
   useEffect(() => {
-    const fetchData = async () => {
-      await movieData()
-      await genreData()
+    const fetchData = () => {
+      movieData()
+      genreData()
     }
 
     fetchData()
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
   return (
