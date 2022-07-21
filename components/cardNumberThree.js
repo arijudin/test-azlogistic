@@ -5,7 +5,7 @@ function CardNumberThree() {
     <div className='w-[152px] h-[192px] rounded-3xl text-center pt-10'
       style={{ boxShadow: '0 4px 12px rgba(0,0,0, .1)' }}>
       <Image
-          src='/iconDealer.png'
+          src='/IconDealer.png'
           height={'80%'}
           width={'80%'}
           alt='' />
